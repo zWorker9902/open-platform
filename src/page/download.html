@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta name="baidu-site-verification" content="H4CfHlHHeo">
+  <meta property="og:type" content="政采云">
+  <meta property="og:image" content="http://zcyimg.dithub.com/logo-og.jpg">
+  <meta property="og:description" content="">
+
+  <title>政采云开放平台下载中心</title>
+  <meta name="keywords" content="政采云、政采云平台、政采云开放平台">
+  <meta name="description" content="政采云开放平台, 政采云搭建开放平台，供第三方调用，后续持续开放平台的能力。">
+    <link rel="shortcut icon" href="https://sitecdn.zcy.gov.cn/zcy/desktop/media/img/favicon.ico">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_739686_7rttugtxymq.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<!--浮动头部-->
+<div class="header navbar-fixed-top">
+  <%=require('html-loader!../tpl/Header/header.html')%>
+</div>
+
+<div class="dw-container w1200">
+
+  <ul class="nav dw-list">
+    <li>
+      <span class="title">下载中心</span>
+      <i class="tline"></i>
+    </li>
+    <li class="active">
+      <a data-sdk-filter="java">
+        <span>java</span>
+        <i class="iconfont icon-sanjiao"></i>
+      </a>
+    </li>
+    <!--<li>-->
+      <!--<a data-sdk-filter="c++">-->
+        <!--<span>C++</span>-->
+        <!--<i class="iconfont icon-sanjiao"></i>-->
+      <!--</a>-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--<a data-sdk-filter="php">-->
+        <!--<span>Php</span>-->
+        <!--<i class="iconfont icon-sanjiao"></i>-->
+      <!--</a>-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--<a data-sdk-filter="c#">-->
+        <!--<span>C#</span>-->
+        <!--<i class="iconfont icon-sanjiao"></i>-->
+      <!--</a>-->
+    <!--</li>-->
+  </ul>
+
+  <div class="dw-detail">
+    <span class="dw-title">SDK下载</span>
+    <div class="dw-content">
+      <table>
+        <thead>
+        <tr>
+          <th style="width:30%">SDK下载</th>
+          <th style="width:15%">更新版本</th>
+          <th style="width:15%">文档大小</th>
+          <th style="width:40%">说明</th>
+        </tr>
+        </thead>
+        <tbody data-sdk-type="1">
+        <!--<tr>-->
+          <!--<td>-->
+            <!--<a href="#">文档名称名称名称名称名称</a>-->
+          <!--</td>-->
+          <!--<td>V 1.1.1</td>-->
+          <!--<td>221.5M</td>-->
+          <!--<td title="">文档说明文档说明文档说明文档说明文档说明文档</td>-->
+        <!--</tr>-->
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="help-tips">
+  <%=require('html-loader!../tpl/Tips/tips.html')%>
+</div>
+
+<div class="footer">
+  <%=require('html-loader!../tpl/Footer/footer.html')%>
+</div>
+</body>
+</html>

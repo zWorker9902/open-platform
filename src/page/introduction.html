@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta name="baidu-site-verification" content="H4CfHlHHeo">
+  <meta property="og:type" content="政采云">
+  <meta property="og:image" content="http://zcyimg.dithub.com/logo-og.jpg">
+  <meta property="og:description" content="">
+
+  <title>政采云开放能力和入驻介绍</title>
+  <meta name="keywords" content="政采云、政采云平台、政采云开放平台">
+  <meta name="description" content="政采云开放平台, 政采云搭建开放平台，供第三方调用，后续持续开放平台的能力。">
+  <link rel="shortcut icon" href="https://sitecdn.zcy.gov.cn/zcy/desktop/media/img/favicon.ico">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_739686_7rttugtxymq.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<!--浮动头部-->
+<div class="header navbar-fixed-top">
+  <%=require('html-loader!../tpl/Header/header.html')%>
+</div>
+
+<div class="main w1200">
+
+  <div class="step-wrap w890">
+
+    <div class="step-title">
+      入驻流程
+    </div>
+
+    <ul class="step-box">
+      <li class="box">
+        <a href="help.html#process1">
+          <span>1</span>
+          <i></i>
+          <span>注册</span>
+        </a>
+      </li>
+      <li class="step-next"><i class="iconfont icon-iconfontjiantou"></i></li>
+      <li class="box">
+        <a href="help.html#process2">
+          <span>2</span>
+          <i></i>
+          <span>申请</span>
+        </a>
+      </li>
+      <li class="step-next"><i class="iconfont icon-iconfontjiantou"></i></li>
+      <li class="box">
+        <a href="help.html#process3">
+          <span>3</span>
+          <i></i>
+          <span>审核</span>
+        </a>
+      </li>
+      <li class="step-next"><i class="iconfont icon-iconfontjiantou"></i></li>
+      <li class="box">
+        <a href="help.html#process4">
+          <span>4</span>
+          <i></i>
+          <span>对接</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="step-details">
+      <li class="detail">
+        通过政采云平台注册流程成为正式供应商。
+      </li>
+      <li class="detail">
+        登录政采云开放平台，确认平台入驻协议和义务。填写申请所需材料并提交审核。
+      </li>
+      <li class="detail">
+        平台运营审核，通过审核后才可接入平台。审核失败后可修改申请资料后重新提交审核。
+      </li>
+      <li class="detail">
+        平台运营审核通过后，供应商可在平台管理中心获取APPKEY和SECRET并接入所需功能（详见API文档说明）。
+      </li>
+    </ul>
+
+  </div>
+
+  <p class="w890 info">平台能力介绍</p>
+
+  <div class="article">
+    <div class="content">
+
+      <div class="section">
+        <div class="section-title">
+          <h4>API调用场景</h4>
+          <p>注：API详细说明见API文档</p>
+        </div>
+
+        <div class="section-content">
+          <span style="line-height:48px">对象：政采云商品管理的第三方开发者或自研发供应商。</span>
+
+          <span>1.商品发布</span>
+          <p>能够支持政采云平台全类目的商品管理。为用户提供包括创建普通商品，对商品进行上架、下架及删除操作，查询商品审核状态的自助操作。</p>
+
+          <span>2.类目相关</span>
+          <p>为了规范标准单位参数，政采云平台的类目具备属性信息。用户可以根据类目ID获取后台类目基本信息和属性信息。</p>
+
+          <span>3.商品信息修改</span>
+          <p>为用户提供商品信息的查询和修改功能。具体功能包括查询商品详情，修改商品基本信息，修改商品价格，根据商品状态列出当前用户下商品信息。</p>
+
+          <span>4.仓库库存同步</span>
+          <p>为了解决供应商在多个销售渠道下仓库信息不同步的问题，政采云开放平台为用户提供单一商品对多仓库的出库入库操作。</p>
+
+          <span>5.订单相关</span>
+          <p>订单是平台线上交易过程中的核心数据，开放订单接口可以减少大量订单操作时间。为用户提供对订单的检索、查询、接单、拒单操作。</p>
+
+          <span>6.发/退货相关</span>
+          <p>买家购买商品后，卖家通过接受订单、发货API对订单进行发货操作，生成发货单，且发货后支持退货操作。并提供查询可用快递公司列表的能力。</p>
+
+          <span>7.结算</span>
+          <p>合作供应商对政采云平台的网超订单进行统一结算，生成结算单。</p>
+
+          <span>8.文件上传/下载</span>
+          <p>为用户提供上传发票、商品图片、附件信息的能力。注：OSS Token API需要借助阿里云OSS SDK辅助。</p>
+
+          <span>9.财政系统相关</span>
+          <p>为用户提供接入财政内网的能力，对财政支付、采购计划等内容进行自主操作和查询。</p>
+
+          <span>10.代理机构</span>
+          <p>政采云开放平台为用户开放检索代理机构库和获取代理机构详情的能力。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="help-tips">
+  <%=require('html-loader!../tpl/Tips/tips.html')%>
+</div>
+
+<div class="footer">
+  <%=require('html-loader!../tpl/Footer/footer.html')%>
+</div>
+
+</body>
+</html>

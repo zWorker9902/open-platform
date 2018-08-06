@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.2">
+    <meta name="baidu-site-verification" content="H4CfHlHHeo">
+    <meta property="og:type" content="政采云">
+    <meta property="og:image" content="http://zcyimg.dithub.com/logo-og.jpg">
+    <meta property="og:description" content="">
+
+    <title>政采云开放平台帮助和说明</title>
+    <meta name="keywords" content="政采云、政采云平台、政采云开放平台">
+    <meta name="description" content="政采云开放平台, 政采云搭建开放平台，供第三方调用，后续持续开放平台的能力。">
+    <link rel="shortcut icon" href="https://sitecdn.zcy.gov.cn/zcy/desktop/media/img/favicon.ico">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_739686_7rttugtxymq.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<!--浮动头部-->
+<div class="header navbar-fixed-top">
+    <%=require('html-loader!../tpl/Header/header.html')%>
+</div>
+
+<div class="help w1200">
+    <ul class="nav dw-list" data-spy="affix">
+        <li>
+            <span class="title">帮助和说明</span>
+            <i class="tline"></i>
+        </li>
+        <li>
+            <a href="#ability" data-tab-index="1">
+                <span>平台能力介绍</span>
+                <i class="iconfont icon-sanjiao"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#placard" data-tab-index="2">
+                <span>公告和宣传</span>
+                <i class="iconfont icon-sanjiao"></i>
+            </a>
+        </li>
+        <!--<li>-->
+            <!--<a href="#process" data-tab-index="3">-->
+                <!--<span>新手指引</span>-->
+                <!--<i class="iconfont icon-sanjiao"></i>-->
+            <!--</a>-->
+        <!--</li>-->
+        <li>
+            <a href="#process" data-tab-index="4">
+                <span>用户注册和申请流程</span>
+                <i class="iconfont icon-sanjiao"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#question" data-tab-index="5">
+                <span>供应商入驻常见问题</span>
+                <i class="iconfont icon-sanjiao"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#register" data-tab-index="6">
+                <span>信息资料填写要求</span>
+                <i class="iconfont icon-sanjiao"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#service" data-tab-index="7">
+                <span>自助服务渠道</span>
+                <i class="iconfont icon-sanjiao"></i>
+            </a>
+        </li>
+
+        <!--<li>-->
+            <!--<a href="download.html">-->
+                <!--<span>资料下载入口</span>-->
+                <!--<i class="iconfont icon-sanjiao"></i>-->
+            <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="api.html">-->
+                <!--<span>API介绍</span>-->
+                <!--<i class="iconfont icon-sanjiao"></i>-->
+            <!--</a>-->
+        <!--</li>-->
+    </ul>
+    <div class="dw-detail">
+
+        <div id="ability" class="article">
+            <span class="title">平台能力介绍</span>
+            <div class="content">
+
+                <div class="section">
+                    <div class="section-title">
+                        <h4>API调用场景</h4>
+                        <p>注：API详细说明见API文档</p>
+                    </div>
+
+                    <div class="section-content">
+                        <span style="line-height:48px">对象：政采云商品管理的第三方开发者或自研发供应商。</span>
+
+                        <span>1.商品发布</span>
+                        <p>能够支持政采云平台全类目的商品管理。为用户提供包括创建普通商品，对商品进行上架、下架及删除操作，查询商品审核状态的自助操作。</p>
+
+                        <span>2.类目相关</span>
+                        <p>为了规范标准单位参数，政采云平台的类目具备属性信息。用户可以根据类目ID获取后台类目基本信息和属性信息。</p>
+
+                        <span>3.商品信息修改</span>
+                        <p>为用户提供商品信息的查询和修改功能。具体功能包括查询商品详情，修改商品基本信息，修改商品价格，根据商品状态列出当前用户下商品信息。</p>
+
+                        <span>4.仓库库存同步</span>
+                        <p>为了解决供应商在多个销售渠道下仓库信息不同步的问题，政采云开放平台为用户提供单一商品对多仓库的出库入库操作。</p>
+
+                        <span>5.订单相关</span>
+                        <p>订单是平台线上交易过程中的核心数据，开放订单接口可以减少大量订单操作时间。为用户提供对订单的检索、查询、接单、拒单操作。</p>
+
+                        <span>6.发/退货相关</span>
+                        <p>买家购买商品后，卖家通过接受订单、发货API对订单进行发货操作，生成发货单，且发货后支持退货操作。并提供查询可用快递公司列表的能力。</p>
+
+                        <span>7.结算</span>
+                        <p>合作供应商对政采云平台的网超订单进行统一结算，生成结算单。</p>
+
+                        <span>8.文件上传/下载</span>
+                        <p>为用户提供上传发票、商品图片、附件信息的能力。注：OSS Token API需要借助阿里云OSS SDK辅助。</p>
+
+                        <span>9.财政系统相关</span>
+                        <p>为用户提供接入财政内网的能力，对财政支付、采购计划等内容进行自主操作和查询。</p>
+
+                        <span>10.代理机构</span>
+                        <p>政采云开放平台为用户开放检索代理机构库和获取代理机构详情的能力。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="placard" class="article">
+            <span class="title">公告和宣传</span>
+            <div class="content">
+                <div class="section">
+                    <div class="section-content">
+                        <span style="line-height: 24px">2018年7月31日，政采云开放平台新域名正式上线：open.zhengcaiyun.cn。</span>
+                        <span style="line-height: 24px">首页全面更新，新增能力和入驻介绍、API文档、下载中心、帮助和说明分页面。</span>
+                        <span style="line-height: 24px">开放能力拓展，六大域API，全方位保障政府采购链路和应用服务开发。</span>
+                        <span style="line-height: 24px"> 申请流程完全线上化，无需繁琐的线下申请，支持线上快速申请入驻资格。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="process" class="article">
+            <span class="title">用户注册和申请流程</span>
+            <div class="content">
+
+                <div class="step-wrap">
+
+                    <div class="step-title">
+                        入驻流程
+                    </div>
+
+                    <ul class="step-box">
+                        <li class="box">
+                            <a href="#process1">
+                                <span>1</span>
+                                <i></i>
+                                <span>注册</span>
+                            </a>
+                        </li>
+                        <li class="step-next"><i class="iconfont icon-iconfontjiantou"></i></li>
+                        <li class="box">
+                            <a href="#process2">
+                                <span>2</span>
+                                <i></i>
+                                <span>申请</span>
+                            </a>
+                        </li>
+                        <li class="step-next"><i class="iconfont icon-iconfontjiantou"></i></li>
+                        <li class="box">
+                            <a href="#process3">
+                                <span>3</span>
+                                <i></i>
+                                <span>审核</span>
+                            </a>
+                        </li>
+                        <li class="step-next"><i class="iconfont icon-iconfontjiantou"></i></li>
+                        <li class="box">
+                            <a href="#process4">
+                                <span>4</span>
+                                <i></i>
+                                <span>对接</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="step-details">
+                        <li class="detail">
+                            通过政采云平台注册流程成为正式供应商。
+                        </li>
+                        <li class="detail">
+                            登录政采云开放平台，确认平台入驻协议和义务。填写申请所需材料并提交审核。
+                        </li>
+                        <li class="detail">
+                            平台运营审核，通过审核后才可接入平台。审核失败后可修改申请资料后重新提交审核。
+                        </li>
+                        <li class="detail">
+                            平台运营审核通过后，供应商可在平台管理中心获取APPKEY和SECRET并接入所需功能（详见API文档说明）。
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div id="process1" class="section">
+                    <div class="section-content">
+                        <h4>一、新用户注册</h4>
+                        <p>供应商需在平台注册账号，完善“供应商基本信息”提交采购中心或同等机构初审，初审后提交纸质资料采购中心终审，由财政监管公示入库后，成为正式供应商。</p>
+                        <p>流程：注册账号——提交资质审核——初审——终审——公示——入库</p>
+
+                        <span style="line-height: 32px">1、注册账号</span>
+                        <p>
+                            1）进入政采云平台网站 <a target="_blank" href="https://www.zcy.gov.cn">https://www.zcy.gov.cn</a>，点击页面右上角【商家入驻】。
+                        </p>
+                        <i class="img001"></i>
+                        <p>
+                            2）点击【商家入驻】后进入注册页面，账户信息填写完毕后（账号自定义填写，只要没有被占用即可），按照营业执照登记机关填写所属区划，阅读同意相关文件后点击【注册】。
+                        </p>
+                        <i class="img002"></i>
+                        <p>
+                            3）注册成功后，点击【快速登录】后政采云平台电子卖场首页的【登录】，输入注册的账号或手机号码、密码以及验证码登录。
+                        </p>
+                        <i class="img003"></i>
+
+                        <span style="line-height: 32px">2、提交资质审核</span>
+
+                        <p>路径：用户中心—基础资料—基本信息管理。</p>
+                        <p>
+                            1）在各标签页中填写供应商基本信息、资质信息（基本资质信息必填）、出资人、财务信息、人员信息（法人必填），标签详情页中带*为必填项，
+                        </p>
+
+
+                        <i class="img004"></i>
+                        <p>
+                            2）如果区划内没有采购中心，可联系当地财政确认应该选择哪个审查监管机构。确认后在“审核监管机构”标签页面点击【编辑】修改，把审查机构和监管机构改成确定好的采购中心和财政。
+                        </p>
+                        <i class="img005"></i>
+                        <p>
+                            3）以上各个标签页内容填写完成，点击右上角【提交审核】，信息将提交采购中心进行初审。
+                        </p>
+                        <p>
+                            4）提交审核后在【信息资料维护】-【注册变更记录】中查看进度和当前状态，待初审状态可以撤回修改资料。
+                        </p>
+                        <!--<i class="img006"></i>-->
+
+                        <span style="line-height: 32px">3、寄送纸质资料</span>
+                        <p>
+                            初审通过后，供应商要将打印好的相关申报材料复印件，寄送至采购中心。
+                        </p>
+                        <p>路径：用户中心—基础资料—基本信息管理。</p>
+                        <p>
+                            1）点击供应商基本信息页面右侧【打印】按钮，打印 《供应商库注册申请表》，签字盖章。
+                        </p>
+                        <p>
+                            2）点击右侧【审核中，查看审核进度】或者左侧注册变更记录菜单，找到审核进度条下方的寄送地址，将打印好的《供应商库注册申请表》及相关申报材料复印件，寄送至采购中心。
+                        </p>
+                        <p>
+                            3）供应商通过采购中心终审，并经过财政监管公示入库后，在注册变更记录中显示“供应商入库成功”说明已成为政采云平台正式供应商。
+                        </p>
+                    </div>
+
+                </div>
+
+                <div id="process2" class="section">
+                    <div class="section-content">
+                        <h4>二、申请</h4>
+                        <span style="line-height: 32px">申请审核：</span>
+                        <p>
+                            合作伙伴登录进入开放平台具体操作页面后，单击“立即申请”，在申请合作伙伴弹窗中完善相关信息，单击“提交”，出现“提交成功”提示，等待审核。
+                        </p>
+                        <i class="img007"></i>
+                    </div>
+                </div>
+
+                <div id="process3" class="section">
+                    <div class="section-content">
+                        <h4>三、审核</h4>
+                        <span style="line-height: 32px">等待审核：</span>
+                        <p>
+                            等待审核过程中，开放平台具体操作页面中会显示“申请中”并列出用户申请的各个域。
+                        </p>
+                        <i class="img008"></i>
+
+                        <span style="line-height: 32px">审核失败：</span>
+                        <p>
+                            如果用户申请审核未能通过，开放平台具体操作页面中会给出审核失败的具体原因。
+                        </p>
+                        <i class="img010"></i>
+                        <p>
+                            单击“重新申请”，可在合作伙伴申请弹窗中修改信息后重新申请。
+                        </p>
+
+                        <span style="line-height: 32px">审核通过：</span>
+                        <p>
+                            合作伙伴审核通过后，页面将显示“恭喜您，您已经成为合作伙伴”，并且在下方展示申请时填写的域和公钥信息。
+                        </p>
+                        <i class="img009"></i>
+                    </div>
+                </div>
+
+                <div id="process4" class="section">
+                    <div class="section-content">
+                        <h4>四、对接</h4>
+                        <p>
+                            在政采云平台注册成功的企业，通过正式供应商认证后，成为合作伙伴参与政府采购平台或企业购平台各项业务。目前能够用到开放平台业务的主要为网上超市供应商。
+                        </p>
+                        <p>
+                            供应商获取网上超市供应商资格后，如需要进行平台接口对接（需具备开发能力）需申请APPKEY，流程如下
+                        </p>
+                        <p>
+                            供应商线上申请-选择合作范围为网上超市供应商-提供<span class="red">申请业务合作范围、联系人、电话、邮箱、对接一级域名链接、工信部备案号、对接IP白名单、公钥</span>-提交审核。
+                        </p>
+                        <p>
+                            供应商成功申请成为平台合作伙伴后，可在开放平台具体操作页面中的“对接ID和说明”中获取APPKEY。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="question" class="article">
+            <span class="title">供应商入驻常见问题</span>
+            <div class="content">
+
+                <div class="section">
+                    <div class="section-content">
+                        <span><b>1. Q: 注册账号后忘记密码怎么办？</b></span>
+                        <p>A：初次登录的系统管理员忘记了密码且账号没有绑定手机和邮箱，只能通过邮件方式找回，请点击链接： <a target="_blank" href="https://help.zcy.gov.cn/web/site_2/2017/03-13/300.html">发送邮件</a> ，按照链接里面的形式去找回密码，一般后台的处理时间是2个工作日。</p>
+
+                        <span><b>2. Q: 公示要多久？资料变更的公示要多久？</b></span>
+                        <p>A：供应商资料信息系统公示和资料变更的时间都是5个自然日。</p>
+
+                        <span><b>3．Q: 供应商初审需要几天？</b></span>
+                        <p>A：供应商注册审核初审一般5个工作日，特殊情况具体看审核机构审核进度，可咨询审核机构。</p>
+
+                        <span><b>4. Q: 供应商终审资料线下邮寄地址在哪里查看？</b></span>
+                        <p>A：寄送地址可以在【基本信息管理】-【审查监管机构】查看审查机构地址</p>
+
+                        <span><b>5. Q: 供应商初审通过，需要寄送什么资料？</b></span>
+                        <p>A：初审通过后，在【基础资料】—【注册变更记录】可以看到需要寄送的资料提示。或审核机构需要的其他资料。</p>
+                        <p>将下列资料打印并加盖单位公章后提交终审。</p>
+                        <ul>
+                            <li>企业法人营业执照（或事业等其他法人证书）；</li>
+                            <li> 税务登记证；</li>
+                            <li>社会保险登记证；</li>
+                            <li>组织机构代码证和法定代表人身份证；</li>
+                            <li>最近年度的资产负债表、损益表和验资（出资）报告；</li>
+                            <li>特许生产、经营或安全卫生许可，特定技术或业务资质，IS0质量和环保管理认证，品牌授权代理等有助于证明其经营和管理能力的证书；</li>
+                            <li>审查机构认为需要提交或供应商认为可提供的其他资料（如公司章程、信用报告等）。；</li>
+                            <li>平台打印出来的注册申请表（打印路径：登录政采云平台，在工作台的【基础资料】—【基本信息管理】 “基本信息”标签页，右上角有【打印】按钮）；</li>
+                        </ul>
+
+                        <span><b>6. Q: 初审通过后，发现某项信息填写错误，能否退回来修改？</b></span>
+                        <p>A：可以由采购中心终审不通过驳回修改，或等正式入库后变更资料提交审核。</p>
+
+                        <span><b>7. Q: 社保登记证没有怎么办？附件要怎么上传？</b></span>
+                        <p>A：建议上传社保缴费证明或社保局证明文件、银行转账凭证，证号按照证明中的单号填写。</p>
+
+                        <span><b>8. Q: 个体工商户没有出资情况-验资报告和财务报表怎么办？</b></span>
+                        <p>A：上传情况说明，并加盖单位公章。</p>
+
+                        <span><b>9. Q: 提交后由哪个审查监管机构审核公示？</b></span>
+                        <p>A：在【审查监管机构】里面查看对应审核机构</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="register" class="article">
+            <span class="title">信息资料填写要求（注意事项）</span>
+            <div class="content">
+                <div class="section">
+                    <div class="section-content">
+                        <h4>基本信息</h4>
+                        <p>1、供应商管理员在维护公司信息资料时，需要上传公司logo，图片格式支持jpg、png，尺寸800X800，图片大小不超过2MB。如果公司没有LOGO，可以上传本公司的一张相关照片。</p>
+                        <p>2、供应商完善基本信息时，所属经济行业必须要选择到三级才可以完成，点一级二级视为未选择完整（点一级二级无法操作完成）。</p>
+
+                        <h4>资质信息</h4>
+                        <p>1、供应商没有社会保险处理方法：</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;①、如果是三证合一，就要到社保局拉取以往的社保信息。如有殊情况，上传情况说明，或联系采购中心。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;②、如果是五证合一，就不需要了，可以直接上传营业执照即可。</p>
+
+                        <p>2、如果没有营业执照注册号，就填写营业执照上的统一社会信用代码。</p>
+                        <p>3、五证合一后只需要提供营业执照副本的复印件加盖公章即可。</p>
+                        <p>4、供应商的社会保险登记如已过期，建议自行咨询采购中心，遵循当地采购中心要求进行填写。</p>
+                        <p>5、供应商资质列表里的“特定资质”信息是非必填项，如需填写可按照基本资质信息相同方式填写。</p>
+
+                        <h4>出资人</h4>
+                        <p>1、供应商如果没有出资人信息，填写法人信息就可以了。</p>
+                        <p>2、供应商企业法人是外国人没有身份证，暂时可用护照代替身份证。</p>
+                        <p>3、供应商注册资金如是美元，在目前系统没有支持前，暂时建议是注册当日的美元汇率换算成人民币先办理。</p>
+                        <p>4、供应商的出资情况需上传的资料：</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;①、如果是非个体工商户，必须上传公司章程、验资报告；</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;②、如果是个体工商户，上传情况说明，情况说明仅需供应商自行说明并盖章。</p>
+
+                        <h4>分支机构</h4>
+                        <p>供应商的分支机构是非必填项，如果没有则可以不做填写。</p>
+
+                        <h4>财务信息</h4>
+                        <p>1、供应商入驻政采云平台没有财务信息该怎么办？</p>
+                        <p>A：金额可以填写0.00，然后附件说明没有财务信息的原因详情盖章即可。</p>
+                        <p>2、供应商没有对外投资资金，可以在【财务信息】-【资产负债表】-【对外投资】栏内填写0.00。</p>
+                        <p>3、供应商基本信息的财务信息填写数字时，可以四舍五入。</p>
+
+                        <h4>人员信息管理</h4>
+                        <p>1、供应商基本信息填写无法提交审核，如提示“法人信息不完善”时，建议检查人员信息、出资人信息内的法人信息是否已填写完善。</p>
+                        <p>2、供应商的“人员信息管理”填写要求：法定代表人为必填项，其他人员信息，例如：技术负责人，机构管理员，财务管理员等是否需要填写，具体咨询审查监管机构要求。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="service" class="article">
+            <span class="title">自助服务渠道</span>
+            <div class="content">
+                <div class="section">
+                    <div class="section-content">
+                        <p>为了更好的服务政采云客户，政采云公司为您提供多种自助服务渠道，目前已包括：帮助中心文档查询、智能采宝机器人、邮件和留言咨询。</p>
+                        <p>帮助中心页面网址：<a target="_blank" href="https://help.zcy.gov.cn/">https://help.zcy.gov.cn/</a> 核心功能：自助查询、类目检索、服务引导、自助工具（建设中）</p>
+                        <p>智能采宝机器人链接：<a target="_blank" href="http://m.tb.cn/x.X2oEy">http://m.tb.cn/x.X2oEy</a>核心功能：采宝是一款基于自然语言处理（NLP）和人工智能（AI）技术提供智能会话能力的云服务机器人，能够做到智能问答、秒级响应、并支持您转接人工客服继续咨询。</p>
+                        <!--<a target="_blank" href="/mailto/service@cai-inc.com">service@cai-inc.com</a>-->
+                        <p>咨询邮箱：service@cai-inc.com 我们会在一个工作日内响应您的咨询需求（注：工作日17点后邮件，顺延至下一个工作日受理）。</p>
+                        <p>留言咨询网址：<a target="_blank" href="https://customer.zcy.gov.cn/feedback">https://customer.zcy.gov.cn/feedback</a> 我们会在一个工作日内响应您的咨询需求（注：工作日17点后留言，顺延至下一个工作日受理）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="help-tips">
+    <%=require('html-loader!../tpl/Tips/tips.html')%>
+</div>
+
+<div class="footer">
+    <%=require('html-loader!../tpl/Footer/footer.html')%>
+</div>
+</body>
+</html>

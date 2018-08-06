@@ -1,0 +1,350 @@
+@import "./common.less";
+
+/************************************************/
+body {
+  background-color: #fff;
+}
+
+/****** 轮播图 ******/
+.carousel {
+  width: 100%;
+  height: 100%;
+  background-color: #0e1c43;
+}
+.carousel-indicators {
+  bottom: 40px;
+}
+/* 轮播图指示器 */
+.carousel-indicators li {
+  width: 14px;
+  height: 14px;
+  z-index: 999;
+  border: 1px solid #fff;
+  background-color: transparent;
+  margin: 0 2px !important;
+}
+
+.carousel-indicators .active {
+  height: 14px !important;
+  width: 28px !important;
+  border-radius: 7px;
+  background-color: #fff;
+  transition-duration: .35s;
+}
+
+/*******浮动层级*******/
+.item {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  //border: 1px solid #fff;
+}
+.scene {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.bg1 {
+  background-color: #0e1c43;
+  .layer2 {
+    position: absolute;
+    left: 600px;
+    top: 150px;
+    width: 404px;
+    height: 400px;
+  }
+  .layer2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .layer3 {
+    position: absolute;
+    left: 570px;
+    top: 64px;
+    width: 566px;
+    height: 586px;
+  }
+  .layer3 img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.bg2 {
+  background-color: #011c40;
+  .layer2 {
+    position: absolute;
+    left: 636px;
+    top: 230px;
+    width: 400px;
+    height: 266px;
+  }
+  .layer2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .layer3 {
+    position: absolute;
+    left: 512px;
+    top: 150px;
+    width: 642px;
+    height: 382px;
+  }
+  .layer3 img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.bg3 {
+  background-color: #1f013a;
+  .layer2 {
+    position: absolute;
+    left: 570px;
+    top: 162px;
+    width: 188px;
+    height: 359px;
+  }
+  .layer2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .layer3 {
+    position: absolute;
+    left: 580px;
+    top: 98px;
+    width: 570px;
+    height: 486px;
+  }
+  .layer3 img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* 图层调整 */
+.layer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.layer1 {
+  position: absolute;
+  left: 52px;
+  top: 190px;
+  width: 456px;
+  color: #fff;
+  display: table;
+}
+.layer1 .layer-top .title {
+  font-size: 62px;
+  color: #fff;
+  height: 80px;
+  line-height: 80px;
+  box-sizing: border-box;
+}
+.layer1 .layer-top .etitle {
+  display: table-row;
+  font-size: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  box-sizing: border-box;
+}
+.ml {
+  margin-left: -8px;
+}
+.layer1 .layer-info {
+  margin-top: 52px;
+}
+.layer1 .layer-info p {
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+.layer1 .layer-info .layer-line {
+  width: 120px;
+  height: 2px;
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.main {
+  background-color: #fff;
+  /*display: none;*/
+}
+
+/* 内容区 */
+.cinfo {
+  margin: 88px auto 82px;
+  width: 680px;
+  display: table;
+  vertical-align: middle;
+  text-align: center;
+  color: #0d253e;
+}
+.cinfo .title {
+  display: table-row;
+  line-height: 54px;
+  font-size: 38px;
+}
+.cinfo .c-line {
+  width: 50px;
+  height: 4px;
+  display: block;
+  background-color: #7e53fb;
+  border-radius: 4px;
+  margin: 18px auto 22px;
+}
+.cinfo .info {
+  font-size: 20px;
+  width: 686px;
+  font-weight: normal !important;
+  color: #606266;
+}
+
+/*域列表*/
+.areas-wrap {
+  width: 100%;
+  //height: 880px;
+  background-color: #f6f7fa;
+  padding: 90px 0;
+  box-sizing: border-box;
+
+  .areas {
+    width: 960px;
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+
+    .area {
+      display: table-cell;
+      box-sizing: border-box;
+      width: 320px;
+      height: auto;
+      padding: 10px;
+      vertical-align: middle;
+      text-align: center;
+
+      .area-info {
+        display: table;
+        border: 1px solid #edeff5;
+        background-color: #fff;
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        text-align: center;
+        padding: 50px 24px 30px;
+        box-sizing: border-box;
+
+        .area-header {
+          margin: 0 auto;
+          width: 100px;
+          height: 100px;
+          line-height: 100px;
+          position: relative;
+
+          i {
+            position: relative;
+            top: -4px;
+            margin: auto;
+            color: #fff;
+            font-size: 38px;
+          }
+        }
+
+        h2 {
+          margin-top: 20px;
+          line-height: 28px;
+          font-weight: normal !important;
+          font-size: 20px;
+          color: #0d253e;
+        }
+
+        p {
+          margin-top: 14px;
+          height: 40px;
+          line-height: 20px;
+          box-sizing: border-box;
+          font-size: 14px;
+          color: #9ea8b2;
+        }
+
+        //&.hover,
+        &:hover {
+          border: 1px solid #edeff5;
+          //box-shadow: 0 4px 10px #96AEC5;
+          box-shadow: 0 4px 10px #D1D7E8;
+          //.enter {
+          //  color: #fff;
+          //  background-color: #9013FE;
+          //}
+        }
+
+        .enter {
+          display: block;
+          margin-top: 30px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 120px;
+          height: 36px;
+          line-height: 35px;
+          box-sizing: border-box;
+          text-align: center;
+          border: 1px solid #9013fe;
+          border-radius: 18px;
+          color: #9013fe;
+          cursor: pointer;
+
+          &:hover {
+            color: #fff;
+            background-color: #9013fe;
+          }
+        }
+      }
+    }
+  }
+}
+
+.partner {
+  margin: 0 auto 120px;
+  border: solid #DCE0EC;
+  border-width: 1px 0 0 1px;
+
+  tr {
+    width: auto;
+    margin: 0 auto;
+    height: 88px;
+
+    td {
+      line-height: 88px;
+      border: solid #DCE0EC;
+      border-width: 0 1px 1px 0;
+
+      .item {
+        width: 255px;
+        height: 88px;
+        text-align: center;
+        display: table;
+        vertical-align: middle;
+
+        img {
+          max-width: 210px;
+          max-height: 70px;
+        }
+      }
+    }
+  }
+}
+
+.w1200 {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+

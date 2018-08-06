@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta name="baidu-site-verification" content="H4CfHlHHeo">
+  <meta property="og:type" content="政采云">
+  <meta property="og:image" content="http://zcyimg.dithub.com/logo-og.jpg">
+  <meta property="og:description" content="">
+
+  <title>政采云开放平台</title>
+  <meta name="keywords" content="政采云、政采云平台、政采云开放平台">
+  <meta name="description" content="政采云开放平台, 政采云搭建开放平台，供第三方调用，后续持续开放平台的能力。">
+  <link rel="shortcut icon" href="https://sitecdn.zcy.gov.cn/zcy/desktop/media/img/favicon.ico">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_739686_7rttugtxymq.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<!--浮动头部-->
+<div class="header navbar-fixed-top">
+  <%=require('html-loader!../tpl/Header/header.html')%>
+</div>
+
+<div class="main">
+  <!--轮播图-->
+  <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+    <!-- 指示器 -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-generic" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播内容 -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item bg1 active">
+        <ul class="scene w1200">
+          <li class="layer w1200" data-depth="0.40" data-limit-y="40" data-limit-x="40">
+            <div class="layer3">
+              <img src="https://sitecdn.zcy.gov.cn/zcy-open/img/u011.png?x-oss-process=image/resize,h_565,w_565">
+            </div>
+          </li>
+          <li class="layer" data-depth="0.20" data-limit-y="40" data-limit-x="40">
+            <div class="layer2">
+              <img src="https://sitecdn.zcy.gov.cn/zcy-open/img/u010.png?x-oss-process=image/resize,h_400,w_400">
+            </div>
+          </li>
+          <li class="layer w1200" data-depth="0.60" data-limit-y="40" data-limit-x="40">
+            <div class="layer1">
+              <div class="layer-top">
+                <p class="title">政采云开放平台</p>
+                <p class="etitle">ZCY OPEN PLATFORM</p>
+              </div>
+
+              <div class="layer-info">
+                <p>政采云搭建开放平台，供第三方调用，后续持续开放平台的能力</p>
+                <i class="layer-line"></i>
+              </div>
+            </div>
+          </li>
+
+          <li class="layer" data-depth="0.00"></li>
+        </ul>
+      </div>
+
+      <div class="item bg2">
+        <ul class="scene w1200">
+          <li class="layer w1200" data-depth="0.40" data-limit-y="40" data-limit-x="40">
+            <div class="layer3">
+              <img src="https://sitecdn.zcy.gov.cn/open/pic_cloud2.png">
+            </div>
+          </li>
+          <li class="layer" data-depth="0.20" data-limit-y="40" data-limit-x="40">
+            <div class="layer2">
+              <img src="https://sitecdn.zcy.gov.cn/open/pic_cloud.png">
+            </div>
+          </li>
+          <li class="layer w1200" data-depth="0.60" data-limit-y="40" data-limit-x="40">
+            <div class="layer1">
+              <div class="layer-top">
+                <p class="title">立 于 云 端</p>
+                <p class="etitle">ON THE CLOUD</p>
+              </div>
+
+              <div class="layer-info">
+                <p>政采云开放平台，逐步开放采购行业业务能力</p>
+                <i class="layer-line"></i>
+              </div>
+            </div>
+          </li>
+          <li class="layer" data-depth="0.00"></li>
+        </ul>
+      </div>
+
+      <div class="item bg3">
+        <ul class="scene w1200">
+          <li class="layer w1200" data-depth="0.40" data-limit-y="40" data-limit-x="40">
+            <div class="layer3">
+              <img src="https://sitecdn.zcy.gov.cn/open/pic_space2.png">
+            </div>
+          </li>
+          <li class="layer" data-depth="0.20" data-limit-y="40" data-limit-x="40">
+            <div class="layer2">
+              <img src="https://sitecdn.zcy.gov.cn/open/pic_space.png">
+            </div>
+          </li>
+          <li class="layer w1200" data-depth="0.60" data-limit-y="40" data-limit-x="40">
+            <div class="layer1">
+              <div class="layer-top">
+                <p class="title ml" id="adaptText">自 由 对 接</p>
+                <p class="etitle">FREE DOCKING</p>
+              </div>
+
+              <div class="layer-info">
+                <p>六大开放域自由对接，多维度定制你的对接内容</p>
+                <i class="layer-line"></i>
+              </div>
+            </div>
+          </li>
+          <li class="layer" data-depth="0.00"></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cinfo">
+    <p class="title">开放能力</p>
+    <i class="c-line"></i>
+    <p class="info">高并发、 高可靠、低延迟，为您提供基于政府采购全链路的能力开放和保障</p>
+  </div>
+
+  <div class="areas-wrap">
+    <div class="areas w780">
+      <div class="area">
+        <div class="area-info">
+          <div class="area-header pic_shangping">
+            <i class="iconfont icon-icon--"></i>
+          </div>
+          <h2 class="title">财政域</h2>
+          <p>财政内网提供公告、备案、合同、订单、采购计划等相关能力的接口</p>
+          <a href="api.html?key=财政域" class="enter">
+            点击进入
+          </a>
+        </div>
+      </div>
+      <div class="area">
+        <div class="area-info hover">
+          <div class="area-header pic_jiaoyi">
+            <i class="iconfont icon-icon-test"></i>
+          </div>
+          <h2 class="title">供应商域</h2>
+          <p>供应商域提供商品、发票、物流配送、合同履约等相关能力的接口</p>
+          <a href="api.html?key=供应商域" class="enter">
+            点击进入
+          </a>
+        </div>
+      </div>
+      <div class="area">
+        <div class="area-info">
+          <div class="area-header pic_fapiao">
+            <i class="iconfont icon-dailijigou"></i>
+          </div>
+          <h2 class="title">代理机构域</h2>
+          <p>代理机构域提供场地、公告和网站管理等相关能力的接口</p>
+          <a href="api.html?key=代理机构域" class="enter">
+            点击进入
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="areas w780">
+      <div class="area">
+        <div class="area-info">
+          <div class="area-header pic_caizheng">
+            <i class="iconfont icon-caizhengzizhu"></i>
+          </div>
+          <h2 class="title">金融机构域</h2>
+          <p>金融机构域提供保证金、支付、融资贷款等相关能力的接口</p>
+          <a href="api.html?key=金融机构域" class="enter">
+            点击进入
+          </a>
+        </div>
+      </div>
+      <div class="area">
+        <div class="area-info">
+          <div class="area-header pic_jinrong">
+            <i class="iconfont icon-jinrong1"></i>
+          </div>
+          <h2 class="title">会员企业域</h2>
+          <p>会员企业域提供OA、供应链系统等相关能力的接口</p>
+          <a href="api.html?key=会员企业域" class="enter">
+            点击进入
+          </a>
+        </div>
+      </div>
+      <div class="area">
+        <div class="area-info">
+          <div class="area-header pic_hangye">
+            <i class="iconfont icon-hangye"></i>
+          </div>
+          <h2 class="title">合作伙伴域</h2>
+          <p>合作伙伴域根据合作范围提供对应开放能力的接口</p>
+          <a href="api.html?key=合作伙伴域" class="enter">
+            点击进入
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cinfo">
+    <p class="title">合作伙伴</p>
+    <i class="c-line"></i>
+    <p class="info">期待您与我们携手共创共享政府采购云端生态</p>
+  </div>
+
+  <table class="partner">
+    <tr>
+      <td>
+        <a class="item">
+          <img src="https://sitecdn.zcy.gov.cn/zcy-open/img/u188.png?x-oss-process=image/resize,h_92,w_300" alt="" />
+        </a>
+      </td>
+      <td>
+        <a class="item">
+          <img src="https://sitecdn.zcy.gov.cn/zcy-open/img/u190.png?x-oss-process=image/resize,h_92,w_300" alt="" />
+        </a>
+      </td>
+      <td>
+        <a href="#" class="item">
+          <img src="https://sitecdn.zcy.gov.cn/zcy-open/img/u192.png?x-oss-process=image/resize,h_92,w_300" alt="" />
+        </a>
+
+      </td>
+      <td>
+        <a class="item">
+          <img src="https://sitecdn.zcy.gov.cn/zcy-open/img/u194.png?x-oss-process=image/resize,h_92,w_300" alt="" />
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a class="item">
+          <img src="https://sitecdn.zcy.gov.cn/zcy-open/img/u196.png?x-oss-process=image/resize,h_92,w_300" alt="" />
+        </a>
+      </td>
+      <td>
+        <a class="item">
+          <img src="https://sitecdn.zcy.gov.cn/zcy-open/img/u198.png?x-oss-process=image/resize,h_92,w_300" alt="" />
+        </a>
+      </td>
+      <td>
+        <a class="item">
+          <img src="https://sitecdn.zcy.gov.cn/zcy-open/img/u200.png?x-oss-process=image/resize,h_92,w_300" alt="" />
+        </a>
+      </td>
+      <td>
+        <a class="item">
+          <img src="https://sitecdn.zcy.gov.cn/zcy-open/img/u202.png?x-oss-process=image/resize,h_92,w_300" alt="" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="help-tips">
+  <%=require('html-loader!../tpl/Tips/tips.html')%>
+</div>
+
+<div class="footer">
+  <%=require('html-loader!../tpl/Footer/footer.html')%>
+</div>
+</body>
+</html>

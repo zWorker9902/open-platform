@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.2">
+    <meta name="baidu-site-verification" content="H4CfHlHHeo">
+    <meta property="og:type" content="政采云">
+    <meta property="og:image" content="http://zcyimg.dithub.com/logo-og.jpg">
+    <meta property="og:description" content="">
+
+    <title>政采云开放平台帮助和说明</title>
+    <meta name="keywords" content="政采云、政采云平台、政采云开放平台">
+    <meta name="description" content="政采云开放平台, 政采云搭建开放平台，供第三方调用，后续持续开放平台的能力。">
+    <link rel="shortcut icon" href="https://sitecdn.zcy.gov.cn/zcy/desktop/media/img/favicon.ico">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_739686_7rttugtxymq.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<!--浮动头部-->
+<div class="header navbar-fixed-top">
+    <%=require('html-loader!../tpl/Header/header.html')%>
+</div>
+
+<div class="onlinedb w1200">
+    <h4 class="title">政采云开放平台api在线调试 - JWT 签名算法(试用版)</h4>
+
+    <div class="db-form">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="gateway" class="col-sm-3 control-label">网关地址(Gateway url):</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="gateway">
+                </div>
+                <div class="col-sm-3">
+                    <button id="submit" class="btn btn-default">提交测试(Execute)</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="apiId" class="col-sm-3 control-label">API名称(API Name):</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="apiId">
+                </div>
+                <label class="col-sm3 control-label">由 API域(namespace) + API名组成</label>
+            </div>
+
+            <div class="form-group">
+                <label for="version" class="col-sm-3 control-label">API版本号(version):</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="version">
+                </div>
+                <label class="col-sm3 control-label">默认"1.0.0"</label>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">提交方式(Method):</label>
+                <div id="method" class="col-sm-6">
+                    <label class="radio-inline">
+                        <input type="radio" name="httpMethod" value="POST" checked> POST
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="httpMethod" value="GET"> GET
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="appKey" class="col-sm-3 control-label">AppKey:</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="appKey">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="rsaPrivateKey" class="col-sm-3 control-label">RSA privateKey:</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" id="rsaPrivateKey" rows="3"></textarea>
+                </div>
+                <label class="col-sm3 control-label">请填写RSA256 pkcs8格式私钥</label>
+            </div>
+
+            <div class="form-group">
+                <label for="apiId" class="col-sm-3 control-label">API请求参数(Param data):</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" id="data" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="apiId" class="col-sm-3 control-label">API返回结果(API Response):</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" id="apiResponse" rows="3" readonly></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="help-tips">
+    <%=require('html-loader!../tpl/Tips/tips.html')%>
+</div>
+
+<div class="footer">
+    <%=require('html-loader!../tpl/Footer/footer.html')%>
+</div>
+</body>
+</html>
